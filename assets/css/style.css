@@ -4,6 +4,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --bg-body:#f3f5f8; 
+    --bg-hover: #249fda;
+    --icon-color: #6c757d;
+}
 body{
     font-family: "Poppins", sans-serif;
 }
