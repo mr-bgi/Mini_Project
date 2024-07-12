@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -13,11 +14,77 @@
 </head>
 
 <body>
-    <header>
+    <header class="mb-4">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" class="w-100 object-fit-cover " alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-4">
+                        <li class="nav-item d-flex align-content-center justify-content-center">
+                            <a class="nav-link active d-flex flex-column justify-content-center align-items-center"
+                                aria-current="page" href="#">
+                                <img src="img/nav-icon/home.svg" class="bg-body rounded-circle p-1" alt="">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center align-items-center">
+                            <a class="nav-link d-flex flex-column justify-content-center align-items-center" href="#">
+                                <img src="img/nav-icon/news.svg" class="bg-body rounded-circle p-1" alt="">
+                                <span>Article</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center align-items-center">
+                            <a class="nav-link d-flex flex-column justify-content-center align-items-center" href="#">
+                                <img src="img/nav-icon/job.svg" class="bg-body rounded-circle p-1" alt="">
+                                <span>Job</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center align-items-center">
+                            <a class="nav-link d-flex flex-column justify-content-center align-items-center" href="#">
+                                <img src="img/nav-icon/notification.svg" class="bg-body rounded-circle p-1" alt="">
+                                <span>Nofication</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center align-items-center dropdown">
+                            <a class="nav-link  d-flex flex-column justify-content-center align-items-center" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="img/profile.jpg" class="profile object-fit-cover rounded-circle"
+                                    class="bg-body rounded-circle p-1" alt="">
+                                <span>Me<i class="bi bi-caret-down-fill"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i>
+                                        <span>Setting</span>
+                                    </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        <span class="ps-1">Log Out</span>
+                                    </a></li>
+                            </ul>
+                        </li>
+                    </ul>
 
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <div class="container">
+        <div class="container px-5">
             <div class="row">
                 <div class="col-12 col-lg-8">
                     <div class="profile">
@@ -146,7 +213,59 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-
+                    <div class="card bg-white border-0 rounded-4 mb-3">
+                        <div class="card-header bg-white border-0 pb-0 pt-3 rounded-4 d-flex justify-content-between ">
+                            <h4 class="fw-bold">About</h4>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div class="card-body pt-0">
+                            <p>This is group is for student of FE Generation in Afternoon Class - The goal of creating
+                                this group is to share any information of our study</p>
+                            <h4 class="fw-bold">Private</h4>
+                            <p>Only member can see who's in the group and what they post.</p>
+                            <ul class=" list-unstyled">
+                                <li>
+                                    <i class="bi bi-people fs-5"></i>
+                                    <span>12 members</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-people fs-5"></i>
+                                    <span>6 online</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-file-earmark-post fs-5"></i>
+                                    <span>1 posted</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-table fs-5"></i>
+                                    <span>created 01 Jan 2024 by <b>Chhayly</b></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-white border-0 rounded-4">
+                        <div class="card-body">
+                            <h4 class="fw-bold">Admin Tool</h4>
+                            <ul class=" list-unstyled">
+                                <li class="py-1">
+                                    <i class="bi bi-people fs-5"></i>
+                                    <span>Manage members</span>
+                                </li>
+                                <li class="py-1">
+                                    <i class="bi bi-person-plus fs-5"></i>
+                                    <span>Member requests</span>
+                                </li>
+                                <li class="py-1">
+                                    <i class="bi bi-person-check fs-5"></i>
+                                    <span>Pending approvals</span>
+                                </li>
+                                <li class="py-1">
+                                    <i class="bi bi-table fs-5"></i>
+                                    <span>Schedualed posts</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
