@@ -3896,12 +3896,15 @@ textarea.form-control-lg {
   --bs-nav-pills-link-active-bg: #0d6efd;
 }
 .nav-pills .nav-link {
-  border-radius: var(--bs-nav-pills-border-radius);
+  color: #676A7C;
+  /* border-radius: var(--bs-nav-pills-border-radius); */
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: var(--bs-nav-pills-link-active-color);
-  background-color: var(--bs-nav-pills-link-active-bg);
+  color: var(--bs-nav-pills-link-active-bg);
+  font-weight: 500;
+  /* background-color: var(--bs-nav-pills-link-active-bg); */
+  border-bottom: 3px solid var(--bs-nav-pills-link-active-bg);
 }
 
 .nav-underline {

@@ -1,21 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <title>Mini Project</title>
 </head>
+
 <body>
     <header>
-        
+
     </header>
     <main>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-8">
+                    <div class="profile">
+                        <div class="card p-3 border-0 rounded-3 pb-0">
+                            <div class="profile-cover">
+                                <img class="card-img-top" src="img/group-cover.png" alt="Title" />
+                            </div>
+                            <div class="card-body d-flex justify-content-between px-0">
+                                <div class="profile-content d-flex">
+                                    <div class="profile-img me-2 rounded-5 overflow-hidden">
+                                        <img src="img/group-profile.png" alt="">
+                                    </div>
+                                    <div class="profile-name">
+                                        <div class="name">
+                                            <a href="#" class="text-decoration-none fs-5 fw-medium text-black">UX UI
+                                                Design</a>&nbsp;<i class="bi bi-patch-check-fill text-success"></i>
+                                        </div>
+                                        <div class="privacy">
+                                            <a href="#" class="text-decoration-none"><i class="fa-solid fa-lock"></i>
+                                                Design</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more-option-btn">
+                                    <button type="button" class="btn btn-invite">
+                                        Invite
+                                    </button>
+                                    <button type="button" class="btn btn-invite">
+                                        <i class="bi bi-three-dots"></i>
+                                    </button>
 
+                                </div>
+                            </div>
+                            <div class="body-footer">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">Feed</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profile" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false">Photos</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">Videos</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">Links</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="create-post my-4">
+                        <div class="card border-0">
+                            <div class="card-body d-flex p-2 ">
+                                <div class="profile-img overflow-hidden me-2">
+                                    <img src="img/profile.jpg" alt="">
+                                </div>
+                                <div class="create-post-modal w-100 d-flex align-items-center">
+                                    <!-- Button trigger modal -->
+                                    <a role="button" class=" w-100 p-0 text-decoration-none" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <input class="form-control" type="text" value="Create Post"
+                                            aria-label="readonly " readonly>
+                                    </a>
+                                    <a role="button" class=" p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <img src="img/icon/image.svg" alt="">
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 pb-0">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create Post</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body pb-0">
+                                                    <div class="card p-0 border-0">
+                                                        <div class="card-header bg-transparent border-0 p-0 d-flex">
+                                                            <div class="profile-img overflow-hidden me-2">
+                                                                <img src="img/profile.jpg" alt="">
+                                                            </div>
+                                                            <div class="name">
+                                                                <h6 class="m-0">Lori Ferguson</h6>
+                                                                <span class="rounded-2">Admin</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body px-0">
+                                                            <div class="mb-3">
+                                                                <textarea class="form-control m-0 border-0 p-0" name="" id=""
+                                                                    rows="3" placeholder="Write something here ..."></textarea>
+                                                            </div>
+                                                            <div class="more-option">
+                                                                <a href="#"><i class="bi bi-image-fill"></i> Photo</a>
+                                                                <a href="#"><i class="bi bi-emoji-smile-fill"></i> Emoji</a>
+                                                                <a href="#"><i class="bi bi-calendar2-week-fill"></i> Schedule</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer pt-0 border-0 d-flex justify-content-center">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Cancel</button>
+                                                    <button type="button" class="btn btn-primary">Post</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-lg-4">
 
@@ -26,4 +153,5 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
