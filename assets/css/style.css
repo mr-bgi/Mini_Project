@@ -61,7 +61,7 @@ max-width: 85px !important;
 
 .create-post .card .card-body .profile-img{
     max-width: 45px;
-    msx-height: 45px;
+    max-height: 45px;
     border-radius: 100%;
 
 }
