@@ -12,77 +12,131 @@
 </head>
 
 <body>
-    <header class="mb-4">
-        <nav class="navbar navbar-expand-lg bg-white">
-            <div class="container px-5">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" class="w-100 object-fit-cover " alt="">
+    <header class="mb-3 sticky-top">
+        <nav class="navbar navbar-expand-md bg-body-tertiary py-0">
+            <div class="container-md flex-nowrap">
+                <a class="navbar-brand me-3" href="#">
+                    <img src="img/logo.png" class="h-100 object-fit-cover" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-4">
-                        <li class="nav-item d-flex align-content-center justify-content-center">
-                            <a class="nav-link active d-flex flex-column justify-content-center align-items-center"
-                                aria-current="page" href="#">
-                                <img src="img/nav-icon/home.svg" class="bg-body rounded-circle p-1" alt="">
-                                <span>Home</span>
-                            </a>
-                        </li>
-                        <li class="nav-item d-flex justify-content-center align-items-center">
-                            <a class="nav-link d-flex flex-column justify-content-center align-items-center" href="#">
-                                <img src="img/nav-icon/news.svg" class="bg-body rounded-circle p-1" alt="">
-                                <span>Article</span>
-                            </a>
-                        </li>
-                        <li class="nav-item d-flex justify-content-center align-items-center">
-                            <a class="nav-link d-flex flex-column justify-content-center align-items-center" href="#">
-                                <img src="img/nav-icon/job.svg" class="bg-body rounded-circle p-1" alt="">
-                                <span>Job</span>
-                            </a>
-                        </li>
-                        <li class="nav-item d-flex justify-content-center align-items-center">
-                            <a class="nav-link d-flex flex-column justify-content-center align-items-center" href="#">
-                                <img src="img/nav-icon/notification.svg" class="bg-body rounded-circle p-1" alt="">
-                                <span>Nofication</span>
-                            </a>
-                        </li>
-                        <li class="nav-item d-flex justify-content-center align-items-center dropdown">
-                            <a class="nav-link  d-flex flex-column justify-content-center align-items-center" href="#"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="img/profile.jpg" class="profile object-fit-cover rounded-circle"
-                                    class="bg-body rounded-circle p-1" alt="">
-                                <span>Me<i class="bi bi-caret-down-fill"></i></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">
-                                        <i class="bi bi-gear"></i>
-                                        <span>Setting</span>
-                                    </a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">
-                                        <i class="bi bi-box-arrow-left"></i>
-                                        <span class="ps-1">Log Out</span>
-                                    </a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
+                <form class="input-group collapse d-md-none" id="logo">
+                    <span class="input-group-text bg-white border-end-0 text-secondary" id="basic-addon1">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0" placeholder="Search here ..."
+                        aria-label="Username" aria-describedby="basic-addon1">
+                </form>
+                <div class="d-flex gap-3 ms-1">
+                    <button class="btn btn-ddd d-block d-md-none rounded-circle" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#logo" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="navbar-toggler btn-offcanvas p-0 rounded-circle" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <img src="img/profile.jpg" class="w-100 h-100 object-fit-cover" alt="">
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <div class="offcanvas-profile rounded-circle overflow-hidden me-3">
+                            <img src="img/profile.jpg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            Saroth Tola
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div
+                        class="offcanvas-body d-flex flex-column flex-md-row  align-items-start align-items-md-center justify-content-center">
+                        <form class="input-group d-none d-md-flex me-5" id="search">
+                            <span class="input-group-text bg-white" id="basic-addon1">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input type="text" class="form-control border-start-0 p-2" placeholder="Search here ..."
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </form>
+                        <ul class="navbar-nav justify-content-start flex-grow-1 gap-3 pt-1">
+                            <li class="nav-item">
+                                <a class="nav-link active d-flex flex-md-column align-items-center justify-content-start justify-content-md-center gap-3 gap-md-0"
+                                    aria-current="page" href="#">
+                                    <img src="img/nav-icon/home.svg" class="rounded-circle p-1 gray" alt="">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex flex-md-column align-items-center justify-content-start justify-content-md-center gap-3 gap-md-0"
+                                    href="#">
+                                    <img src="img/nav-icon/news.svg" class="rounded-circle p-1 gray" alt="">
+                                    <span>Article</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex flex-md-column align-items-center justify-content-start justify-content-md-center gap-3 gap-md-0"
+                                    href="#">
+                                    <img src="img/nav-icon/job.svg" class="rounded-circle p-1 gray" alt="">
+                                    <span>Jobs</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex flex-md-column align-items-center justify-content-start gap-3 gap-md-0 position-relative"
+                                    href="#">
+                                    <img src="img/nav-icon/notification.svg" class="rounded-circle p-1 gray" alt="">
+                                    <span>Notification</span>
+                                    <span
+                                        class="position-absolute translate-middle bg-danger border border-light rounded-circle badge-notifacation text-white">9
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown d-none d-md-block">
+                                <a class="nav-link btn-profile d-flex flex-column align-items-start" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="img/profile.jpg" class="w-100 h-100 object-fit-cover rounded-circle"
+                                        alt="">
+                                    <span class="d-flex align-items-center justify-content-center gap-1">
+                                        <span>Me</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <div
+                                        class="head-profile d-flex align-items-center justify-content-start ps-3 mb-2  ">
+                                        <div class="offcanvas-profile rounded-circle overflow-hidden me-3">
+                                            <img src="img/profile.jpg" class="w-100 h-100 object-fit-cover" alt="">
+                                        </div>
+                                        <a href="#" class=" text-decoration-none text-secondary">SAROTH TOLA</a>
+                                    </div>
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="bi bi-gear"></i>
+                                            Setting
+                                        </a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="bi bi-box-arrow-left fw-bold"></i>
+                                            Log out</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="offcanvas-footer p-3 d-flex justify-content-between gap-5 d-md-none">
+                        <button type="button" class="btn btn-outline-secondary">
+                            <i class="bi bi-box-arrow-left fw-bold"></i>
+                            Log out
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary px-3">
+                            <i class="bi bi-gear"></i>
+                            Setting
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="container px-5">
+        <div class=" container-md">
             <div class="row">
                 <div class="col-12 col-lg-8">
                     <div class="profile">

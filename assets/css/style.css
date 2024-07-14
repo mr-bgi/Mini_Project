@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
 *{
     padding: 0;
@@ -12,28 +11,91 @@
 }
 
 body{
-    /* font-family: "Kantumruy Pro", sans-serif; */
-    font-family: "Poppins", sans-serif;
+    font-family: "Kantumruy Pro", sans-serif;
     background-color: var(--bg-body);
 }
 .bg-body{
     background-color: var(--bg-body) !important;
 }
-.navbar{
-    height: 66px;
+.navbar form .form-control, .input-group-text{
+    background-color: #f3f5f8 !important;
+    border: none !important;
+    font-size: 15px;
 }
 .navbar-brand{
-max-width: 85px !important;
+    height: 70px;
 }
-.navbar .profile{
-    width: 30px;
-    height: 30px;
+.navbar-brand img{
+    transform: scale(1.3);
 }
 .nav-link img{
-    filter: saturate(1);
+    background-color: #f4f5f6;
 }
 .nav-link span{
     font-size: 15px;
+}
+.nav-link .gray{
+    transition: 0.2s;
+    filter: saturate(0.1);
+}
+.nav-link:hover .gray{
+    animation: nav-hover 0.2s;
+    filter: saturate(1);
+    background-color: #f3f5f8;
+}
+.nav-link:hover span{
+    color: #249fda;
+}
+.dropdown-menu li:hover{
+    background-color: #f3f5f8;
+}
+.btn-ddd{
+    background-color: #ddd;
+    transform: scale(0.8);
+}
+.navbar form .form-control{
+    max-width: 350px;
+}
+.navbar form .form-control:focus, .input-group-text{
+    box-shadow: none;
+    border-color: #ddd;
+}
+.offcanvas-profile{
+    width: 60px;
+    height: 60px;
+}
+.btn-profile{
+    width: 47px;
+    height: 47px;
+}
+.btn-offcanvas{
+    width: 43px;
+    height: 43px;
+    overflow: hidden;
+}
+.navbar .dropdown-menu{
+    min-width: 250px;
+}
+.offcanvas-footer button:hover{
+    color: #249fda;
+    background-color: #f3f5f8;
+}
+.badge-notifacation{
+    padding:0px 6px;
+    top: 13px;
+    left: 55px;
+    font-size: 13px !important;
+}
+@keyframes nav-hover {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.5);}
+    100% {transform: scale(1);}
+}
+@media (max-width: 768px) {
+    .badge-notifacation{
+        top: 13px;
+        left: 25px;
+    }
 }
 
 /* Seaklim */
