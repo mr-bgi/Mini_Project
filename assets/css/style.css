@@ -97,7 +97,12 @@ body{
         left: 25px;
     }
 }
-
+.side-card p{
+    font-weight: 400;
+}
+.side-card ul li span{
+    font-weight: 500;
+}
 /* Seaklim */
 .profile .card .card-body .more-option-btn .btn {
     background-color: var(--bg-body);
